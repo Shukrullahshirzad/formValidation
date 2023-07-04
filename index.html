@@ -18,29 +18,30 @@
         <p>You <i>know</i> you want to.</p>
         <form action="post" id="createAccount">
           <h1>Let's do this!</h1>
-          <div>
+          <div class="form-row">
             <label for="firstName">First name</label>
-            <input type="text" id="firstName" name="firstName">
+            <input type="text" id="firstName" name="firstName" required>
           </div>
-          <div>
+          <div class="form-row">
             <label for="lastName">last name</label>
-            <input type="text" id="lastName" name="lastName">
+            <input type="text" id="lastName" name="lastName" required>
           </div>
-          <div>
+          <div class="form-row">
             <label for="email">email</label>
-            <input type="email" id="email" name="email">
+            <input type="email" id="email" name="email" required>
           </div>
-          <div>
-            <label for="phoneNumber"></label>
-            <input type="tel" id="phoneNumber" name="phoneNumber">
+          <div class="form-row">
+            <label for="phoneNumber">phone number</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required>
           </div>
-          <div>
+          <div class="form-row">
             <label for="password">password</label>
-            <input type="password" id="password" name="password">
+            <input type="password" id="password" name="password" required minlength="8" pattern="/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,10}$
+/">
           </div>
-          <div>
+          <div class="form-row">
             <label for="confirmPass">confirm password</label>
-            <input type="text" id="confirmPass" name="confirmPass">
+            <input type="text" id="confirmPass" name="confirmPass" required>
           </div>
         </form>
         <button type="submit" form="createAccount">create account</button>
